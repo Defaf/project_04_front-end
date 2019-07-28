@@ -11,6 +11,9 @@ import ChangePassword from './auth/components/ChangePassword'
 
 import Alert from 'react-bootstrap/Alert'
 
+import Game from './game/GameView'
+import SelectCharacter from './game/SelectCharacter'
+
 class App extends Component {
   constructor () {
     super()
@@ -34,6 +37,8 @@ class App extends Component {
 
     return (
       <React.Fragment>
+        <main>
+{/*         
         <Header user={user} />
         {alerts.map((alert, index) => (
           <Alert key={index} dismissible variant={alert.type}>
@@ -54,7 +59,11 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword alert={this.alert} user={user} />
-          )} />
+          )} /> */}
+
+          <Game/>
+          {/* <SelectCharacter/> */}
+          
         </main>
       </React.Fragment>
     )
