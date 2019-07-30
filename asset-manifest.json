@@ -1,0 +1,21 @@
+{
+  "main.css": "static/css/main.80f78d4d.css",
+  "main.css.map": "static/css/main.80f78d4d.css.map",
+  "main.js": "static/js/main.d7139039.js",
+  "main.js.map": "static/js/main.d7139039.js.map",
+  "static\\media\\dudley_block.png": "static/media/dudley_block.d77ed39f.png",
+  "static\\media\\dudley_cross.png": "static/media/dudley_cross.37e7216b.png",
+  "static\\media\\dudley_duck.png": "static/media/dudley_duck.6bc40532.png",
+  "static\\media\\dudley_hook.png": "static/media/dudley_hook.5ecad8b6.png",
+  "static\\media\\dudley_jab.png": "static/media/dudley_jab.aacded94.png",
+  "static\\media\\dudley_jump.png": "static/media/dudley_jump.a4bf5710.png",
+  "static\\media\\dudley_stance.png": "static/media/dudley_stance.03712486.png",
+  "static\\media\\dudley_uppercut.png": "static/media/dudley_uppercut.cf6408f3.png",
+  "static\\media\\dudley_walk-backwards.png": "static/media/dudley_walk-backwards.9cfe5994.png",
+  "static\\media\\dudley_walk.png": "static/media/dudley_walk.c8aee319.png",
+  "static\\media\\ken_shoryuken.png": "static/media/ken_shoryuken.c7b69f99.png",
+  "static\\media\\ken_sprite.png": "static/media/ken_sprite.53fba61b.png",
+  "static\\media\\ken_tatsumaki.png": "static/media/ken_tatsumaki.87845882.png",
+  "static\\media\\select_players_background.jpg": "static/media/select_players_background.aa31fb49.jpg",
+  "static\\media\\streetFighter_Battle_Background_1.jpg": "static/media/streetFighter_Battle_Background_1.ec4c5ce3.jpg"
+}
