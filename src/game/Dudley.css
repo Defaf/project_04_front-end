@@ -1,0 +1,69 @@
+
+body {
+    margin: 0px;
+    padding: 0;
+}
+.dudleyContainer{
+    margin-left: 760px;
+    z-index: 5;
+}
+.Dudley {
+    display: block;
+    position: absolute;
+    bottom: 112px;
+    width: 106px;
+    height: 116px;
+
+    /* horizontal refliction */
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    background-image: url('../images/dudley_stance.png');
+    /* background-image: url('../images/‏‏ken_sprite_2.png'); */
+}
+/* Stance */
+.Dudley .stance_Dudley {
+    animation: stance_Dudley  steps(20)  1.5s infinite ;
+    background-image: url('../images/dudley_stance.png');
+    height: 116px;
+    /* margin-left: -225px; */
+}
+@keyframes stance_Dudley {
+    from { background-position: 0px 116px; }
+    to { background-position: -2120px 116px; }
+}
+  /* Walk */ 
+.walk_Dudley {
+    animation: walk_Dudley steps(12)  0.7s infinite ;
+    background-image: url('../images/dudley_walk.png');
+    height: 125px;
+    /* width: 116px; */
+}
+@keyframes walk_Dudley {
+    from {background-position: 0px 125px; }
+    to {  background-position: -1392px 125px;}
+}
+  /* Walk Backwards */
+.walk-backwards {
+    animation:walk-backwards steps(12) 0.7s infinite ;
+    background-image: url('../images/dudley_walk-backwards.png');
+    height: 128px;
+}
+@keyframes walk-backwards {
+    from {background-position: 0px 128px;}
+    to {background-position: -1308px 128px;}
+}
+  /* Jab */
+.jab {
+    animation: jab steps(6) 0.4s infinite;
+    background-image: url('../images/dudley_jab.png');
+    height: 113px;
+    width: 141px;
+}
+@keyframes jab {
+    from {background-position: 0px 113px;}
+    to { background-position: -846px 113px; }
+}
