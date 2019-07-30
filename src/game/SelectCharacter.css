@@ -23,7 +23,7 @@
 /* Control the left side */
 .leftSide {
 	left: 0;
-	z-index: -1;
+	/* z-index: -1; */
 }
  
 /* Control the right side */
