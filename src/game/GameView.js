@@ -62,9 +62,10 @@ class GameView extends Component {
         let sqrtDist = Math.pow(distP1x - distP2x, 2) + Math.pow(distP1y - distP2y, 2)
         let distance = Math.sqrt(sqrtDist)
         this.setState({
-            playersDist : this.state.playersDist
+            playersDist : distance
         })
         console.log("dis " +distance)
+        return distance
     }
 
     healthPlayer1 = () => {
@@ -113,21 +114,21 @@ class GameView extends Component {
                     </div>
                     </aside>
                     
-                <canvas id="GameCanvas" ref={this.canvas}
+                {/* <canvas id="GameCanvas" ref={this.canvas}
                     width={ this.state.screen.width * this.state.screen.ratio }
-                    height={ this.state.screen.height * this.state.screen.ratio } /> 
+                    height={ this.state.screen.height * this.state.screen.ratio } />  */}
 
                 <Ken ref={this.player1} 
                 collisionP1= {this.checkCollisionP1} 
                 distance ={this.calculateDistance}
                 healthP2 = {this.healthPlayer2} />
-                {/* <p>{this.state.player1Health +" health p1"}</p> */}
+                <p>{this.state.player1Health +" health p1"}</p>
 
                 <Dudley ref={this.player2} 
                 collisionP1= {this.checkCollisionP1}
                 distance ={this.calculateDistance}
                 healthP1 = {this.healthPlayer1} />
-                {/* <p>{this.state.player2Health +" health p2"}</p> */}
+                <p>{this.state.player2Health +" health p2"}</p>
                 {/* <selectCharacter /> */}
             </main>
         )
