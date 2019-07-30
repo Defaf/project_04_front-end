@@ -1,6 +1,70 @@
+.split {
+	width: 50%;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	overflow-x: hidden;
+	margin-top: 100px;
+}
+  
+/* Control the left side */
+.leftSide {
+	left: 0;
+	z-index: 1;
+}
+ 
+/* Control the right side */
+.rightSide {
+    right: 0;
+    z-index: 1;
+}
+
 canvas {
     display: block;
-    background-color: #000000;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100%; 
+    background-image: url('../images/streetFighter_Battle_Background_1.jpg')  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto 0px auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.healthBarP1{
+    width: 305px;
+    height:26px;
+    background-color: gray;
+    border-radius: 13px;
+    padding:3px;
+    margin:50px auto;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.progressP1{
+    /* width: 500px; */
+    height:20px;
+    border-radius: 10px;
+    background-color: darkturquoise;
+}
+
+.healthBarP2{
+    width: 305px;
+    height:26px;
+    background-color: gray;
+    border-radius: 13px;
+    padding:3px;
+    margin:50px auto;
+}
+.progressP2{
+    /* width: 500px; #bbb*/
+    height:20px;
+    border-radius: 10px;
+    background-color: darkturquoise;
 }

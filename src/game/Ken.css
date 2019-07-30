@@ -4,15 +4,7 @@
     background:url('../images/ken_2.png') left center; 
     animation: play .8s steps(10) infinite;
     background-image:url('../images/ken.png'); 
-} */
-
-/* .ken {
-    width:80px;
-    height:76px; 
-    position:absolute;
-    background-image: url("../images/ken.png");
-    animation: play .90s steps(2) infinite;
-}
+} 
 .punch { 
     background-image: url("../images/ken_punch.png");
     animation: punch steps(4) 0.15s infinite; 
@@ -22,27 +14,48 @@
     to { background-position:-280px -160px; }
 }
 */
+body {
+    margin: 0px;
+    padding: 0;
+}
+.kenContainer{
+    margin-left: 460px;
+    z-index: 5;
+}
 .ken{
     display: inline-block;
-    position: relative;
+    position: absolute;
 }
 .ken, .fireball {
-    position: absolute;
+    /* position: absolute; */
     bottom: 112px;
-    /* margin-left: 150px; */
     width: 70px;
     height: 80px;
     background-image: url('../images/ken_sprite.png');
-    /* background-image: url('https://raw.githubusercontent.com/jkneb/street-fighter-css/master/images/ken.png'); */
 }
 .ken:before, .fireball:before {
-   /* other sprites preloading */
     content: '';
     background: url('../images/ken_tatsumaki.png') no-repeat;
 }
 .ken:after, .fireball:after {
     content: '';
     background: url('../images/ken_shoryuken.png') no-repeat;
+}
+/* walking */
+.walk {
+    animation: walk steps(5) 0.5s infinite;
+}
+@keyframes walk {
+    from {background-position: 0px -240px;}
+    to {background-position: -350px -240px;}
+}
+/* stance */
+.stance {
+    animation: stance steps(4) 0.5s infinite;
+}
+@keyframes stance {
+    from { background-position: 0px -80px;}
+    to { background-position: -280px -80px; }
 }
 /* ken's fireball */
 .fireball {
@@ -51,10 +64,7 @@
     bottom: 0px;
     margin-left: 0;
     background-position: 140px 320px;
-   /* default margin-left */
     transition: margin 8s linear;
-   /* default background position */
-   /* triggering the movement with this class */
     animation: fireball steps(2) 0.15s infinite;
 }
 .fireball:before {
@@ -65,108 +75,56 @@
     margin-left: 4000px;
 }
 @keyframes fireball {
-    from {
-        background-position: 0px -320px;
-   }
-    to {
-        background-position: -140px -320px;
-   }
+    from { background-position: 0px -320px;}
+    to { background-position: -140px -320px;}
 }
 /* ken's fireball impact explosion */
 .explode {
     animation: explode steps(4) 0.5s 1;
 }
 @keyframes explode {
-    from {
-        background-position: 0px -400px;
-   }
-    to {
-        background-position: -280px -400px;
-   }
-}
-/* stance */
-.stance {
-    animation: stance steps(4) 0.5s infinite;
-}
-@keyframes stance {
-    from {
-        background-position: 0px -80px;
-   }
-    to {
-        background-position: -280px -80px;
-   }
+    from { background-position: 0px -400px;}
+    to { background-position: -280px -400px;}
 }
 /* hadoken - must be declared AFTER .stance */
 .hadoken {
     animation: hadoken steps(4) 0.5s infinite;
 }
 @keyframes hadoken {
-    from {
-        background-position: 0px 0px;
-   }
-    to {
-        background-position: -280px 0px;
-   }
+    from { background-position: 0px 0px;}
+    to { background-position: -280px 0px;}
 }
 /* punch */
 .punch {
     animation: punch steps(3) 0.15s infinite;
 }
 @keyframes punch {
-    from {
-        background-position: 0px -160px;
-   }
-    to {
-        background-position: -210px -160px;
-   }
-}
-/* walking */
-.walk {
-    animation: walk steps(5) 0.5s infinite;
-}
-@keyframes walk {
-    from {
-        background-position: 0px -240px;
-   }
-    to {
-        background-position: -350px -240px;
-   }
+    from { background-position: 0px -160px;}
+    to { background-position: -210px -160px; }
 }
 /* kick */
 .kick {
     animation: kick steps(5) 0.5s infinite;
 }
 @keyframes kick {
-    from {
-        background-position: 0px -480px;
-   }
-    to {
-        background-position: -350px -480px;
-   }
+    from {background-position: 0px -480px; }
+    to {background-position: -350px -480px; }
 }
 /* reverse kick */
 .reversekick {
     animation: reversekick steps(5) 0.5s infinite;
 }
 @keyframes reversekick {
-    from {
-        background-position: 0px -560px;
-   }
-    to {
-        background-position: -350px -560px;
-   }
+    from { background-position: 0px -560px;}
+    to {background-position: -350px -560px; }
 }
 /* kneel down */
 .kneel {
     animation: kneel steps(1) 0.2s infinite;
 }
 @keyframes kneel {
-    from {
-        background-position: 0px -720px;
-   }
-    to {
-        background-position: -70px -720px;
-   }
+    from {background-position: 0px -720px;}
+    to {background-position: -70px -720px; }
 }
 /* jump */
 .jump {
@@ -178,18 +136,13 @@
     bottom: 112px;
 }
 @keyframes jump {
-    from {
-        background-position: 0px -640px;
-   }
-    to {
-        background-position: -490px -640px;
-   }
+    from {  background-position: 0px -640px; }
+    to { background-position: -490px -640px;}
 }
 /* shoryuken */
 .shoryuken {
     height: 110px;
     background-image: url('../images/ken_shoryuken.png');
-    /* background-image: url('https://raw.githubusercontent.com/jkneb/street-fighter-css/master/images/ken-shoryuken.png'); */
     transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42);
     bottom: 225px;
     animation: shoryuken steps(7) 1s infinite;
@@ -198,18 +151,13 @@
     bottom: 112px;
 }
 @keyframes shoryuken {
-    from {
-        background-position: 0px 0px;
-   }
-    to {
-        background-position: -490px 0px;
-   }
+    from { background-position: 0px 0px; }
+    to {background-position: -490px 0px; }
 }
 /* tatsumaki senpuu kyaku */
 .tatsumaki {
     height: 110px;
     background-image: url('../images/ken_tatsumaki.png');
-    /* background-image: url('https://raw.githubusercontent.com/jkneb/street-fighter-css/master/images/ken-tatsumaki-senpuu-kyaku.png'); */
     transition: bottom 0.2s cubic-bezier(0.99, 0.005, 0, 0.42);
     bottom: 132px;
     animation: tatsumaki steps(13) 2s infinite;
@@ -218,42 +166,7 @@
     bottom: 112px;
 }
 @keyframes tatsumaki {
-    from {
-        background-position: 0px 0px;
-   }
-    to {
-        background-position: -910px 0px;
-   }
+    from { background-position: 0px 0px; }
+    to {background-position: -910px 0px;}
 }
-.commands {
-    margin-left: 450px;
-    font-size: 12px;
-    padding: 15px;
-}
-.commands h1 {
-    margin-top: 0;
-    font-size: 14px;
-}
-.commands i {
-    padding: 0px 4px;
-    font-style: normal;
-    font-weight: bold;
-    outline: 1px solid pink;
-}
-.commands button + button {
-    white-space: nowrap;
-}
-.stage {
-    position: absolute;
-    top: 0;
-    width: 450px;
-    height: 330px;
-    background: url('https://raw.githubusercontent.com/jkneb/street-fighter-css/master/images/bg2.jpg') no-repeat 0px -100px;
-    background-size: contain;
-    float: left;
-    margin-right: 20px;
-}
-body {
-    margin: 0px;
-    padding: 0;
-}
+
