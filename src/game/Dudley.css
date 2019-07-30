@@ -56,6 +56,17 @@ body {
     from {background-position: 0px 128px;}
     to {background-position: -1308px 128px;}
 }
+ /* Jump */
+.jump_Dudley {
+    animation:jump_Dudley steps(24) 1.3s  infinite ;
+    background-image: url('../images/dudley_jump.png');
+    height: 193px;
+    /* width: 106px; */
+}
+@keyframes jump_Dudley {
+    from {background-position: 0px 193px;}
+    to {  background-position: -2544px 193px;}
+}
   /* Jab */
 .jab {
     animation: jab steps(6) 0.4s infinite;
@@ -66,4 +77,54 @@ body {
 @keyframes jab {
     from {background-position: 0px 113px;}
     to { background-position: -846px 113px; }
+}
+.duck {
+    animation: duck  steps(10) 0.8s infinite ;
+    background: url('../images/dudley_duck.png');
+    height: 76px;
+    width: 97px;
+}
+@keyframes duck {
+    from { background-position: 0px 76px; }
+    to { background-position: -970px 76px;}
+}
+.cross {
+    animation: cross  steps(8) 0.4s infinite;
+    background: url('../images/dudley_cross.png');
+    height: 113px;
+    width: 155px;
+}
+@keyframes cross {
+    from { background-position: 0px 113px;}
+    to {background-position: -1240px 113px; }
+}
+.hook {
+    animation: hook steps(13) 0.4s infinite ;
+    background-image: url('../images/dudley_hook.png');
+    height: 116px;
+    width: 118px;
+}
+@keyframes hook {
+    from { background-position: 0px 116px; }
+    to { background-position: -1534px 116px;}
+}
+.uppercut {
+    animation: uppercut  steps(18) 0.9s infinite ;
+    background-image: url('../images/dudley_uppercut.png');
+    height: 138px;
+    width: 127px;
+}
+@keyframes uppercut {
+    from {background-position: 0px 138px;}
+    to { background-position: -2286px 138px;}
+}
+.block {
+    animation:block steps(10) 0.8s infinite;
+    background-image: url('../images/dudley_block.png');
+    height: 114px;
+    width: 93px;
+}
+@keyframes block {
+    from {background-position: 0px 114px; }
+    to { background-position: -930px 114px;}
 }

@@ -29,17 +29,52 @@ class Dudley extends Component {
             const originalMarginPx = parseInt(originalMargin.replace('px', '')) 
             this.Character.current.style.marginLeft = originalMarginPx - 10 + "px";
 
-        }else  if (event.keyCode === 90) {// Z
+        }else if (event.keyCode === 38){// 38 is the up arrow on the keyboard
 
-            // if (this.props.distance() <= 50 ){
-                this.Character.current.classList.add('jab');
-                setTimeout( () => { this.Character.current.classList.remove('jab'); }, 500);
-                // this.props.healthP1()
-                console.log("heeey you're kick")
+            this.Character.current.classList.add('jump_Dudley');
+            setTimeout( () => { this.Character.current.classList.remove('jump_Dudley'); }, 1000);
+            console.log("heeey you're jumpping ")
+        }
+        else if (event.keyCode === 40){// 40 is the down arrow on the keyboard
 
-            // }else{
-            //     console.log('no kick')
-            // }
+            this.Character.current.classList.add('duck');
+            setTimeout( () => { this.Character.current.classList.remove('duck'); }, 1000);
+            console.log("heeey you're down ")
+
+        }else  if (event.keyCode === 80) {// 80 is the letter P on the keyboard
+
+            if (this.props.distance() <= 85 ){
+                if (this.props.healthP1() !== 0){
+                    this.Character.current.classList.add('jab');
+                    setTimeout( () => { this.Character.current.classList.remove('jab'); }, 500);
+                    console.log("heeey you're jab")
+                }else {
+                    event.stopPropagation();
+                }
+            }else{
+                console.log('no kick')
+            }
+
+        }else if (event.keyCode === 76) {// 76 is the letter L on the keyboard
+
+            this.Character.current.classList.add('cross');
+            setTimeout( () => { this.Character.current.classList.remove('cross'); }, 500);
+            console.log("heeey you're cross")
+
+        }else if (event.keyCode === 73) {// 73 is the letter I on the keyboard
+            this.Character.current.classList.add('hook');
+            setTimeout( () => { this.Character.current.classList.remove('hook'); }, 1000);
+            console.log("heeey you're hook")
+
+        }else if (event.keyCode === 79) {// 79 is the letter O on the keyboard
+            this.Character.current.classList.add('uppercut');
+            setTimeout( () => { this.Character.current.classList.remove('uppercut'); }, 1000);
+            console.log("heeey you're uppercut")
+
+        }else if (event.keyCode === 16 ) {// 16 is the shift  on the keyboard
+            this.Character.current.classList.add('block');
+            setTimeout( () => { this.Character.current.classList.remove('block'); }, 500);
+            console.log("heeey you're block")
         }
     }
 
