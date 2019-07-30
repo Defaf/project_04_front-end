@@ -114,21 +114,22 @@ class GameView extends Component {
                     </div>
                     </aside>
                     
-                {/* <canvas id="GameCanvas" ref={this.canvas}
+                 <canvas id="GameCanvas" ref={this.canvas}
                     width={ this.state.screen.width * this.state.screen.ratio }
-                    height={ this.state.screen.height * this.state.screen.ratio } />  */}
+                    height={ this.state.screen.height * this.state.screen.ratio } />  
 
                 <Ken ref={this.player1} 
                 collisionP1= {this.checkCollisionP1} 
                 distance ={this.calculateDistance}
-                healthP2 = {this.healthPlayer2} />
-                <p>{this.state.player1Health +" health p1"}</p>
+                healthP1 = {this.healthPlayer1}
+                healthP2 = {this.healthPlayer2}/>
+                {/* <p>{this.state.player1Health +" health p1"}</p> */}
 
                 <Dudley ref={this.player2} 
                 collisionP1= {this.checkCollisionP1}
                 distance ={this.calculateDistance}
-                healthP1 = {this.healthPlayer1} />
-                <p>{this.state.player2Health +" health p2"}</p>
+                healthP2 = {this.healthPlayer2}/>
+                {/* <p>{this.state.player2Health +" health p2"}</p> */}
                 {/* <selectCharacter /> */}
             </main>
         )

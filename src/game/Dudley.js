@@ -8,7 +8,7 @@ class Dudley extends Component {
         this.Character = React.createRef()
     }
 
-    dudleyAttack = (event) => {
+    dudleyMovement = (event) => {
         if(event.keyCode === 39){// 39 is the right arrow on the keyboard
 
             if (!this.props.collisionP1() ) {
@@ -41,16 +41,22 @@ class Dudley extends Component {
             setTimeout( () => { this.Character.current.classList.remove('duck'); }, 1000);
             console.log("heeey you're down ")
 
-        }else  if (event.keyCode === 80) {// 80 is the letter P on the keyboard
+        }
+    }
+
+    dudleyAttack = (event) => {
+       if (event.keyCode === 80) {// 80 is the letter P on the keyboard
 
             if (this.props.distance() <= 85 ){
-                if (this.props.healthP1() !== 0){
+                // console.log("hp1 is ", this.props.healthP2())
+                // if (this.props.healthP2() === true){
+                //    return false
+                // }else {
                     this.Character.current.classList.add('jab');
                     setTimeout( () => { this.Character.current.classList.remove('jab'); }, 500);
+                    this.props.healthP1()
                     console.log("heeey you're jab")
-                }else {
-                    event.stopPropagation();
-                }
+                // }
             }else{
                 console.log('no kick')
             }
@@ -79,13 +85,14 @@ class Dudley extends Component {
     }
 
     componentDidMount(){
+        document.addEventListener("keydown", this.dudleyMovement, false);
         document.addEventListener("keydown", this.dudleyAttack, false);
     }
 
     render() {
         return (
             <div className= "dudleyContainer">
-                <section className="Dudley" ref={this.Character} onKeyDown={ (e) =>  this.dudleyAttack(e) } >
+                <section className="Dudley" ref={this.Character} onKeyDown={ (e) =>  this.dudleyMovement(e) } onKeyDown={ (e) =>  this.dudleyAttack(e) } >
                 </section>
             </div>
         )
