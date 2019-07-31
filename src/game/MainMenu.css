@@ -1,0 +1,33 @@
+/* body{
+    background-color: #000000;
+} */
+.btn-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select, .how, .game{
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #ffffff;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.select:hover, .select:focus ,
+.how:hover, .how:focus ,
+.game:hover, .game:focus {
+    background: #0053ba;
+}
+
+.select:focus, .how:focus, .game:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
