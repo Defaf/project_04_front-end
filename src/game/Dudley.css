@@ -10,7 +10,7 @@ body {
 .Dudley {
     display: block;
     position: absolute;
-    bottom: 112px;
+    bottom: 100px;
     width: 106px;
     height: 116px;
 
@@ -128,3 +128,4 @@ body {
     from {background-position: 0px 114px; }
     to { background-position: -930px 114px;}
 }
+
