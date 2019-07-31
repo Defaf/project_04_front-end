@@ -1,0 +1,81 @@
+
+  
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    z-index: -1;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column h3, .column p{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+.moveKeys1{
+    margin-left: 180px;
+}
+.attack{
+    margin-top:300px;
+}
+.attackKeys1{
+    margin-left: 180px;
+}
+.keys{
+    box-sizing: border-box;
+    line-height: 80px;
+    font-size: 22px;
+    text-align: center;
+    width: 80px;
+    color: #555;
+    margin: 0 8px;
+    height: 80px;
+    border-color: #f2f2f2;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    display: inline-block;
+    position: absolute;
+}
+/* MOVEMENT KEYS */
+.main-move{
+    margin-top: 100px;
+}
+.keyS, .keyDownA{
+    margin-left: 100px;
+}
+.keyD , .keyLeftA{
+    margin-left: 190px;
+}
+.keyW, .keyUpA{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+/* ATTACK KEYS*/
+.main-attack{
+    margin-top: 90px;
+}
+
+.keyE, .keyI{
+    margin-left: 70px;
+}
+.keyF, .keyO{
+    margin-left: 160px;
+}
+.keyR, .keyP{
+    margin-left: 30px;
+}
+.keyC, .keyL{
+    margin-left: 120px;
+}
+.keyV, .keyShift{
+    margin-left: 210px;
+}
