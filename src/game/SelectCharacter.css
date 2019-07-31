@@ -8,29 +8,10 @@
 	background-size: cover;
 	height: 657px;
 }
-.split {
-	height: 100%;
-	width: 50%;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	overflow-x: hidden;
-	padding-top: 20px;
+.player-content{
 	text-align: center;
-	color:white;
+	/* z-index: 5; */
 }
-  
-/* Control the left side */
-.leftSide {
-	left: 0;
-	/* z-index: -1; */
-}
- 
-/* Control the right side */
-.rightSide {
-	right: 0;
-}
-  
 .character {
 	height: 100%;
 	overflow: hidden;
@@ -54,7 +35,7 @@
   .character-container .columns.is-gapless:not(:last-child) {
 	margin-bottom: 0;
   }
-  .character-container .column {
+  .character-container .x {
 	max-width: 71.5px;
 	
   }
@@ -118,4 +99,6 @@
 	  filter: brightness(150%);
    }
 }
-  
+.data{
+	background-color: yellow;
+}

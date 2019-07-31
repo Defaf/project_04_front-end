@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import './SelectCharacter.css'
-import './characterPanel.css'
+import './Character.css'
 
 class Character extends Component {
     
     state = {
-        hidden: true
+        hidden: true,
+        choice: ''
     }
+
 handle = () =>{
     console.log('cliced!!!')
 }
@@ -14,7 +16,17 @@ handle = () =>{
         this.setState({
             hidden: !this.state.hidden
         })
-        console.log(event.target)
+
+        console.log('this is' + event.target.value)
+    }
+
+    display = (event) => {
+        let name = event.target.value
+        console.log(event.target.value)
+        this.setState({
+           choice: name
+        })
+
     }
 
     render(){
@@ -24,16 +36,17 @@ handle = () =>{
         
                 <div className="table">
                     <ul className="horizontal-list">
-                        <li  >
+                        <li>
                             <img className="character-img" 
                             src={this.props.sImg}  
                             alt={this.props.name}
-                            onClick={this.toggleHidden} />
+                            // onClick={(e) => this.toggleHidden (e)}
+                            onClick={this.display} />
                         </li>
                         {this.state.hidden ? "" : <p> {this.props.name} </p> }
                     </ul>
                 </div> 
-               
+
             </section>
         )
     }

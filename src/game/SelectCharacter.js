@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './SelectCharacter.css'
-import './characterPanel.css'
+import './Character.css'
 
 import Character from './Character'
 import characterData from './charactersData'
@@ -13,12 +13,12 @@ class SelectCharacter extends Component {
     render(){ 
         return (
             <section id="characterSelection">
-                <div className="sideContainer">
-                    <div className="split leftSide"><h2>PLAYER 1</h2></div>
+                <div className="row sideContainer">
+                    <div className="column player-content"><h2>PLAYER 1</h2></div>
 
                         <div className="character-container">
                             <div className = "rows">
-                                <div className = "column">
+                                <div className = "x">
                                     <div className="character-box" >
                                         {this.state.characterData.map( sCharacter => <Character 
                                             key  = {sCharacter.id} 
@@ -26,14 +26,14 @@ class SelectCharacter extends Component {
                                             name = {sCharacter.name}
                                             sImg = {sCharacter.smallImg}/>
                                         )}
-                                    </div>
+                                    </div> 
                                 </div>
                             </div>
                         </div>
 
-                    <div className="split rightSide"><h2>PLAYER 2</h2></div>
+                    <div className="column player-content"><h2>PLAYER 2</h2></div>
                 </div>
-
+                
             </section>
         )
     }
