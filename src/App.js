@@ -11,6 +11,8 @@ import ChangePassword from './auth/components/ChangePassword'
 
 import Alert from 'react-bootstrap/Alert'
 
+import MainMenu from './game/MainMenu'
+import HowToPlay from './game/HowToPlay'
 import Game from './game/GameView'
 import SelectCharacter from './game/SelectCharacter'
 
@@ -61,8 +63,11 @@ class App extends Component {
             <ChangePassword alert={this.alert} user={user} />
           )} /> */}
 
-          <Game/>
+          {/* <MainMenu/> */}
           {/* <SelectCharacter/> */}
+          {/* <HowToPlay/> */}
+          <Game/>
+          
           
         </main>
       </React.Fragment>
