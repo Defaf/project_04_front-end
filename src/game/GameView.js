@@ -77,7 +77,8 @@ class GameView extends Component {
 
     healthPlayer1 = () => {
         if( this.state.player1Health === 0) {
-        //    alert("p1 is dead " + this.state.player1Health + " p2 is the winner !!") 
+        //    alert("KEN is dead " + this.state.player1Health + " p2 is the winner !!") 
+        alert("Ken is dead Dudley is the winner !!") 
            this.playKO()
            this.setState({ koImage: true })
            return true ;
@@ -92,6 +93,8 @@ class GameView extends Component {
     healthPlayer2 = () => {
         if( this.state.player2Health === 0) {
         //    alert("p2 is dead " + this.state.player2Health + " p1 is the winner !!")
+        alert("Dudley is dead Ken is the winner !!") 
+
            this.playKO()
            this.setState({ koImage: true })
            return true ;
