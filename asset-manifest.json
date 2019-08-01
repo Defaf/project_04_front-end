@@ -1,8 +1,17 @@
 {
-  "main.css": "static/css/main.80f78d4d.css",
-  "main.css.map": "static/css/main.80f78d4d.css.map",
-  "main.js": "static/js/main.d7139039.js",
-  "main.js.map": "static/js/main.d7139039.js.map",
+  "main.css": "static/css/main.41423c13.css",
+  "main.css.map": "static/css/main.41423c13.css.map",
+  "main.js": "static/js/main.79cd44c8.js",
+  "main.js.map": "static/js/main.79cd44c8.js.map",
+  "static\\media\\KO_SE.mp3": "static/media/KO_SE.5bc4fc39.mp3",
+  "static\\media\\KO_finish.png": "static/media/KO_finish.97d6bd23.png",
+  "static\\media\\KenKick_SE.mp3": "static/media/KenKick_SE.871b39d3.mp3",
+  "static\\media\\KenPunch_SE.mp3": "static/media/KenPunch_SE.951abdef.mp3",
+  "static\\media\\RyuTatsumaki_SE.mp3": "static/media/RyuTatsumaki_SE.440b7363.mp3",
+  "static\\media\\dudleyCross.mp3": "static/media/dudleyCross.ee4123fa.mp3",
+  "static\\media\\dudleyHook.mp3": "static/media/dudleyHook.a60e8eb5.mp3",
+  "static\\media\\dudleyJab.mp3": "static/media/dudleyJab.a7114cf4.mp3",
+  "static\\media\\dudleyUppercut.mp3": "static/media/dudleyUppercut.f061ecb2.mp3",
   "static\\media\\dudley_block.png": "static/media/dudley_block.d77ed39f.png",
   "static\\media\\dudley_cross.png": "static/media/dudley_cross.37e7216b.png",
   "static\\media\\dudley_duck.png": "static/media/dudley_duck.6bc40532.png",
@@ -17,5 +26,5 @@
   "static\\media\\ken_sprite.png": "static/media/ken_sprite.53fba61b.png",
   "static\\media\\ken_tatsumaki.png": "static/media/ken_tatsumaki.87845882.png",
   "static\\media\\select_players_background.jpg": "static/media/select_players_background.aa31fb49.jpg",
-  "static\\media\\streetFighter_Battle_Background_1.jpg": "static/media/streetFighter_Battle_Background_1.ec4c5ce3.jpg"
+  "static\\media\\streetFighter_Battle_Background_2.jpg": "static/media/streetFighter_Battle_Background_2.7bda933a.jpg"
 }
