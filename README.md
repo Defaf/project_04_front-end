@@ -1,6 +1,6 @@
 # ​Street Fighter Reactjs Edition
 
-​![Alt text](src\streetFighter.JPG?raw=true "street fighter stage view")
+​![Alt text](./src/streetFighter.JPG?raw=true "street fighter stage view")
 ​
 ## Web Application Description 
 Famous fighting video game in the world, this edition from Street Fighter series is developed as a web game and contain one fighting stage with 2 characters ( KEN and Dudey)
